@@ -1,14 +1,14 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install --production
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js test -- --watch
 
 PATH: 
-  C:\cmder\bin;C:\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\cmder\vendor\conemu-maximus5;C:\cmder\vendor\conemu-maximus5\ConEmu;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files\Oculus\Support\oculus-runtime;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Druide\Antidote 9\Application\Bin64\;C:\Program Files (x86)\Druide\Antidote 9\Application\Bin32\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\wamp64\bin\php\php5.6.25;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Brackets\command;C:\wamp64\bin\php\php7.0.10;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Git\cmd;C:\Users\alexa\AppData\Local\Android\sdk\platform-tools;;C:\WINDOWS\System32\OpenSSH\;C:\Users\alexa\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\Users\alexa\AppData\Local\Programs\Python\Python36-32\;C:\Ruby24-x64\bin;C:\Users\alexa\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Docker Toolbox;C:\Users\alexa\AppData\Roaming\Composer\vendor\bin;C:\Program Files\Heroku\bin;C:\wamp64\bin\php\php7.0.10;C:\Users\alexa\AppData\Roaming\npm;C:\Users\alexa\AppData\Local\Yarn\bin;C:\Users\alexa\AppData\Roaming\Dashlane\5.13.0.20992\bin\Firefox_Extension\{442718d9-475e-452a-b3e1-fb1ee16b8e9f}\components;C:\Users\alexa\AppData\Roaming\Dashlane\5.13.0.20992\ucrt;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\share\vim\vim74;C:\cmder\
+  C:\cmder\bin;C:\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\cmder\bin;C:\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\cmder\vendor\conemu-maximus5;C:\cmder\vendor\conemu-maximus5\ConEmu;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Yarn\bin\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Users\Alexandre\AppData\Roaming\npm;C:\Users\Alexandre\AppData\Local\Microsoft\WindowsApps;C:\Users\Alexandre\AppData\Local\Yarn\bin;C:\Users\Alexandre\AppData\Roaming\Dashlane\5.13.0.20992\bin\Firefox_Extension\{442718d9-475e-452a-b3e1-fb1ee16b8e9f}\components;C:\Users\Alexandre\AppData\Roaming\Dashlane\5.13.0.20992\ucrt;C:\Program Files\heroku\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\share\vim\vim74;C:\cmder\;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\share\vim\vim74;C:\cmder\
 
 Yarn version: 
   1.5.1
 
 Node version: 
-  8.9.4
+  8.9.3
 
 Platform: 
   win32 x64
@@ -30,18 +30,19 @@ npm manifest:
       "heroku-postbuild": "yarn run build:prod"
     },
     "dependencies": {
-      "babel-cli": "6.24.1",
-      "babel-core": "6.25.0",
+      "babel-cli": "^6.26.0",
+      "babel-core": "^6.26.3",
       "babel-loader": "7.1.1",
       "babel-plugin-transform-class-properties": "6.24.1",
       "babel-plugin-transform-object-rest-spread": "6.23.0",
-      "babel-preset-env": "1.5.2",
+      "babel-preset-env": "^1.7.0",
       "babel-preset-react": "6.24.1",
       "css-loader": "0.28.4",
-      "express": "4.15.4",
+      "express": "^4.16.3",
       "extract-text-webpack-plugin": "3.0.0",
-      "moment": "2.18.1",
-      "node-sass": "4.5.3",
+      "jest-cli": "^23.1.0",
+      "moment": "^2.22.1",
+      "node-sass": "^4.9.0",
       "normalize.css": "7.0.0",
       "react": "15.6.1",
       "react-addons-shallow-compare": "15.6.0",
@@ -55,12 +56,12 @@ npm manifest:
       "style-loader": "0.18.2",
       "uuid": "3.1.0",
       "validator": "8.0.0",
-      "webpack": "3.1.0",
+      "webpack": "3.1.0"
     },
     "devDependencies": {
       "enzyme": "2.9.1",
       "enzyme-to-json": "1.5.1",
-      "jest": "20.0.4",
+      "jest": "^20.0.4",
       "live-server": "^1.2.0",
       "react-test-renderer": "15.6.1",
       "webpack-dev-server": "2.5.1"
@@ -180,12 +181,6 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-3.1.0.tgz#09c202d5c917ec23188caa5c9cb9179cd9547750"
     dependencies:
       color-convert "^1.0.0"
-  
-  ansi-styles@^3.2.1:
-    version "3.2.1"
-    resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-3.2.1.tgz#41fbb20243e50b12be0f04b8dedbf07520ce841d"
-    dependencies:
-      color-convert "^1.9.0"
   
   anymatch@^1.3.0:
     version "1.3.0"
@@ -1230,14 +1225,6 @@ Lockfile:
       escape-string-regexp "^1.0.5"
       supports-color "^4.0.0"
   
-  chalk@^2.4.1:
-    version "2.4.1"
-    resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.1.tgz#18c49ab16a037b6eb0152cc83e3471338215b66e"
-    dependencies:
-      ansi-styles "^3.2.1"
-      escape-string-regexp "^1.0.5"
-      supports-color "^5.3.0"
-  
   cheerio@^0.22.0:
     version "0.22.0"
     resolved "https://registry.yarnpkg.com/cheerio/-/cheerio-0.22.0.tgz#a9baa860a3f9b595a6b81b1a86873121ed3a269e"
@@ -1341,12 +1328,6 @@ Lockfile:
   color-convert@^1.0.0, color-convert@^1.3.0:
     version "1.9.0"
     resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-1.9.0.tgz#1accf97dd739b983bf994d56fec8f95853641b7a"
-    dependencies:
-      color-name "^1.1.1"
-  
-  color-convert@^1.9.0:
-    version "1.9.1"
-    resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-1.9.1.tgz#c1261107aeb2f294ebffec9ed9ecad529a6097ed"
     dependencies:
       color-name "^1.1.1"
   
@@ -2553,10 +2534,6 @@ Lockfile:
   has-flag@^2.0.0:
     version "2.0.0"
     resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-2.0.0.tgz#e8207af1cc7b30d446cc70b734b5e8be18f88d51"
-  
-  has-flag@^3.0.0:
-    version "3.0.0"
-    resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-3.0.0.tgz#b5d454dc2199ae225699f3467e5a07f3b955bafd"
   
   has-unicode@^2.0.0:
     version "2.0.1"
@@ -5368,12 +5345,6 @@ Lockfile:
     dependencies:
       has-flag "^2.0.0"
   
-  supports-color@^5.3.0:
-    version "5.4.0"
-    resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.4.0.tgz#1c6b337402c2137605efe19f10fec390f6faab54"
-    dependencies:
-      has-flag "^3.0.0"
-  
   svgo@^0.7.0:
     version "0.7.2"
     resolved "https://registry.yarnpkg.com/svgo/-/svgo-0.7.2.tgz#9f5772413952135c6fefbf40afe6a4faa88b4bb5"
@@ -5901,10 +5872,17 @@ Lockfile:
       window-size "0.1.0"
 
 Trace: 
-  SyntaxError: C:\Users\alexa\Desktop\Lab\expensify\package.json: Unexpected token } in JSON at position 1252
-      at JSON.parse (<anonymous>)
-      at C:\Program Files (x86)\Yarn\lib\cli.js:1036:59
-      at Generator.next (<anonymous>)
-      at step (C:\Program Files (x86)\Yarn\lib\cli.js:98:30)
-      at C:\Program Files (x86)\Yarn\lib\cli.js:109:13
-      at <anonymous>
+  Error: Command failed.
+  Exit code: 1
+  Command: C:\WINDOWS\system32\cmd.exe
+  Arguments: /d /s /c jest --config=jest.config.json --watch
+  Directory: C:\Users\Alexandre\Desktop\Lab\react-expensify-alexb31
+  Output:
+  
+      at ProcessTermError.MessageError (C:\Program Files (x86)\Yarn\lib\cli.js:186:110)
+      at new ProcessTermError (C:\Program Files (x86)\Yarn\lib\cli.js:226:113)
+      at ChildProcess.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:30281:17)
+      at emitTwo (events.js:126:13)
+      at ChildProcess.emit (events.js:214:7)
+      at maybeClose (internal/child_process.js:925:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
