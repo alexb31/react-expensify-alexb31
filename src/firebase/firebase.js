@@ -14,10 +14,62 @@ firebase.initializeApp(config);
 
 const database = firebase.database();
 
-database.ref().on('value', (snapshot) => {
-  const val = snapshot.val();
-  console.log(`${val.name} is ${val.job.title} at ${val.job.company}`);
+// Child_removed
+database.ref('expenses').on('child_removed', (snapshot) => {
+  console.log(snapshot.key, snapshot.val());
 });
+
+// child_changed
+database.ref('expenses').on('child_changed', (snapshot) => {
+  console.log(snapshot.key, snapshot.val());
+});
+
+// child_changed
+database.ref('expenses').on('child_added', (snapshot) => {
+  console.log(snapshot.key, snapshot.val());
+});
+
+// database.ref('expenses')
+//   .once('value')
+//   .then((snapshot) => {
+//     const expenses = [];
+
+//     snapshot.forEach((childSnapshot) => {
+//       expenses.push({
+//         id: childSnapshot.key,
+//         ...childSnapshot.val()
+//       });
+//     });
+
+//     console.log(expenses)
+//   });
+
+// database.ref('expenses').on('value', (snapshot) => {
+//   const expenses = [];
+
+//     snapshot.forEach((childSnapshot) => {
+//       expenses.push({
+//         id: childSnapshot.key,
+//         ...childSnapshot.val()
+//       });
+//     });
+
+//     console.log(expenses);
+// });
+
+// database.ref('expenses').push({
+//   description: 'water',
+//   amount: 20,
+//   note: '',
+//   createdAt: 75644246
+// });
+
+// database.ref('notes').push({
+//   title: 'React',
+//   body: 'Courses'
+// })
+
+// database.ref('notes/-LEBRwvPQt6PqINPx_hj').remove();
 
 // const onValueChange = database.ref().on('value', (snapshot) => {
 //   console.log(snapshot.val());
